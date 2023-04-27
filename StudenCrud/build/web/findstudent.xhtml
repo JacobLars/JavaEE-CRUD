@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="mycss.css"/>
+    </h:head>
+    <h:body>
+       
+        <h:form>
+            
+            
+            <h1>The Student:</h1>
+            <p:panelGrid columns="2" style="margin: auto">
+
+                 <p:outputLabel value="ID"/>
+                <p:outputLabel value="#{studentController.studentId}"/>
+
+                
+                 <p:outputLabel value="NAME"/>
+                <p:outputLabel value="#{studentController.name}"/>
+                
+                 <p:outputLabel value="AGE"/>
+                <p:outputLabel value="#{studentController.age}"/>
+                
+
+                <p:commandButton value="Return To Homepage" action="index"/>
+            </p:panelGrid>
+            
+            
+        </h:form>
+        
+        
+    </h:body>
+</html>
+
